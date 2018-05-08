@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/yitu-client-consumer/client-consumer.iml" filepath="$PROJECT_DIR$/yitu-client-consumer/client-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yitu-client-provider/client-provider.iml" filepath="$PROJECT_DIR$/yitu-client-provider/client-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yitu-server/server.iml" filepath="$PROJECT_DIR$/yitu-server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/yitu.iml" filepath="$PROJECT_DIR$/.idea/yitu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yitu-zuul/zuul.iml" filepath="$PROJECT_DIR$/yitu-zuul/zuul.iml" />
+    </modules>
+  </component>
+</project>

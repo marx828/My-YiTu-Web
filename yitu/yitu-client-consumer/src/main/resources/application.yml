@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: yitu-client-consumer
+
+eureka:
+  client:
+    service-url:
+           defaultZone: http://localhost:8080/eureka
+server:
+  port: 8082
+

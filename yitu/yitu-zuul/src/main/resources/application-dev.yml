@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: gateway
+server:
+  port: 8081
+  tomcat:
+    min-spare-threads: 20
+    max-threads: 100
+    max-connections: 800
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 2
+    lease-expiration-duration-in-seconds: 5
+    prefer-ip-address: true
+#    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+#zuul:
+#  ignored-services: "*"
+#  routes:
+#    consumer:
+#      path: /consumer/**
+#      serviceId: yitu-client-consumer
+#      custom-sensitive-headers: true
+zuul:
+  prefix: /api #为zuul设置一个公共的前缀
+  routes:
+    consumer:
+      path: /consumer/**
+      serviceId: yitu-client-consumer
+  ribbon-isolation-strategy: semaphore
+  #请求允许重试
+  retryable: true
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+  add-host-header: true
