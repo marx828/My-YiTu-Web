@@ -10,7 +10,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8080/eureka/
+      defaultZone: http://marx:123456@localhost:8080/eureka/
   instance:
     lease-renewal-interval-in-seconds: 2
     lease-expiration-duration-in-seconds: 5
