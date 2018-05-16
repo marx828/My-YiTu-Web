@@ -6,6 +6,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
+//注册中心开启security后，需要新建这个类，重写jar中的配置
 public class SpringBootWebSecurityConfiguration {
 
     @Configuration

@@ -1,5 +1,7 @@
 package com.yitu.clientprovider.controller;
 
+import com.netflix.discovery.DiscoveryClient;
+
 import org.springframework.web.bind.annotation.*;
 
 /**
